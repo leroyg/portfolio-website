@@ -1,0 +1,631 @@
+#nope,
+#blockD {
+    background-color: #3498DB
+}
+
+.invis {
+    visibility: hidden
+}
+
+.vis {
+    visibility: initial
+}
+
+.active {
+    border: 1px #3498db solid
+}
+
+.cen {
+    text-align: center
+}
+
+#bye {
+    top: 50px
+}
+
+#bye,
+#hold {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    display: none
+}
+
+#hold {
+    top: 350px
+}
+
+@-webkit-keyframes pop-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    40% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px)
+    }
+
+    60% {
+        -webkit-transform: translateY(7px);
+        transform: translateY(7px)
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+
+    40% {
+        -webkit-transform: translateY(15px);
+        transform: translateY(15px)
+    }
+
+    60% {
+        -webkit-transform: translateY(7px);
+        transform: translateY(7px)
+    }
+}
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    -ms-animation: bounce 2s infinite
+}
+
+.bounce:hover {
+    opacity: .5
+}
+
+.popped {
+    -webkit-animation: pop-in .5s;
+    -moz-animation: pop-in .5s;
+    -ms-animation: pop-in .5s
+}
+
+.fade {
+    -webkit-animation: fade-in .5s;
+    -moz-animation: fade-in .5s;
+    -ms-animation: fade-in .5s
+}
+
+body {
+    background: #fff;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    color: #000
+}
+
+body ul {
+    list-style-type: none
+}
+
+body a {
+    text-decoration: none;
+    color: #3498DB
+}
+
+body a:hover {
+    text-decoration: underline
+}
+
+body h2,
+body h3,
+.clr,
+p {
+    padding: 0;
+    margin: 0
+}
+
+.heading,
+.contact {
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    background-color: #3498DB;
+    color: #3498DB;
+    padding-top: 20px;
+    z-index: 15;
+    position: relative;
+    letter-spacing: 2px
+}
+
+.heading .greeting,
+.heading #bye,
+.contact .greeting,
+.contact #bye {
+    letter-spacing: 12px;
+    font-size: 7em;
+    font-weight: initial;
+    opacity: 1;
+    text-shadow: #fff 8px -8px 0, #fff 7px -7px 0, #fff 6px -6px 0, #fff 5px -5px 0, #fff 4px -4px 0, #fff 3px -3px 0, #fff 3px -3px 0, #fff 2px -2px 0, #fff 1px -1px 5px
+}
+
+.heading ul,
+.contact ul {
+    text-align: center;
+    line-height: 1px
+}
+
+.heading ul li,
+.contact ul li {
+    display: inline-block;
+    font-size: 2em;
+    margin: 5px
+}
+
+.heading a,
+.contact a {
+    color: #fff;
+    font-weight: lighter;
+    transition: all .5s ease-in-out
+}
+
+.heading a:hover,
+.contact a:hover {
+    -webkit-transform: translateY(2px);
+    transform: translateY(2px)
+}
+
+.heading #scrollButt,
+.contact #scrollButt {
+    top: 160px;
+    font-size: 3em;
+    position: relative;
+    transition: .5s all ease-in-out;
+    color: #fff
+}
+
+.heading #scrollButt:hover,
+.contact #scrollButt:hover {
+    cursor: pointer;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px)
+}
+
+.heading p,
+.contact p {
+    color: #fff
+}
+
+nav {
+    width: 100%;
+    background-color: #fff;
+    position: fixed;
+    font-size: .7em;
+    display: none;
+    top: 0;
+    z-index: 999;
+    text-align: center;
+    border: none;
+    letter-spacing: 2px
+}
+
+nav,
+nav a {
+    color: #3498DB
+}
+
+nav a {
+    padding: 2px
+}
+
+nav ul {
+    list-style-type: none
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px
+}
+
+.intro {
+    text-align: center;
+    width: 100%;
+    height: 1150px;
+    font-size: 2em;
+    letter-spacing: 5px;
+    z-index: -1
+}
+
+.intro .introWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+    width: 100%;
+    position: fixed;
+    top: 45px;
+    right: 100px
+}
+
+.intro .introWrapper h1 {
+    color: #3498DB;
+    font-size: 2em;
+    font-weight: bolder;
+    margin: 5px;
+    letter-spacing: 10px
+}
+
+.intro .introWrapper p {
+    font-size: .6em;
+    line-height: 20px;
+    letter-spacing: 7px
+}
+
+.intro .introWrapper span {
+    font-weight: lighter
+}
+
+.intro .introWrapper .phile {
+    font-size: .5em;
+    height: 20px;
+    vertical-align: top
+}
+
+.intro .bio {
+    width: 40%;
+    padding: 15px;
+    position: relative;
+    top: 250px;
+    left: 10px;
+    height: 50%;
+    text-align: left;
+    font-size: .6em;
+    font-weight: lighter;
+    letter-spacing: 1px
+}
+
+.intro .bio .bioImg {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url("../images/gardner_leroy.jpg");
+    background-size: cover;
+    background-position: 40%;
+    transition: all .5s ease
+}
+
+.intro .bio .bioImg:hover {
+    background-image: url("../images/LeRoyG.png");
+    background-position: initial
+}
+
+.intro .bio span {
+    font-style: italic
+}
+
+#barA,
+#barB,
+#barC {
+    background-color: #3498DB;
+    position: absolute;
+    width: 60%;
+    height: 40px;
+    top: 105px;
+    left: -1000px;
+    z-index: -1
+}
+
+.portfolio {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    z-index: 2;
+    text-align: center
+}
+
+.portfolio h1 {
+    padding-top: 100px;
+    letter-spacing: 5px;
+    font-weight: lighter;
+    color: #fff
+}
+
+.portfolio h4 {
+    margin: 10px;
+    letter-spacing: 2px;
+    font-size: 1.3em
+}
+
+.portfolio p {
+    font-weight: lighter;
+    text-align: left;
+    margin: 5px
+}
+
+.portfolio ul {
+    margin-top: 50px
+}
+
+.portfolio ul li {
+    margin: 20px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: top
+}
+
+.portfolio ul li .projectA,
+.portfolio ul li .projectB,
+.portfolio ul li .projectC,
+.portfolio ul li .projectD {
+    width: 275px;
+    height: 275px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: 50%;
+    transition: all .5s ease
+}
+
+.portfolio ul li .projectA:hover,
+.portfolio ul li .projectB:hover,
+.portfolio ul li .projectC:hover,
+.portfolio ul li .projectD:hover {
+    border-radius: 0%;
+    width: 300px
+}
+
+.portfolio ul li a {
+    font-weight: lighter
+}
+
+.portfolio span {
+    font-weight: bolder
+}
+
+.projectA {
+    background-image: url("../images/sweet_eats.png")
+}
+
+.projectB {
+    background-image: url("../images/great-idea.png")
+}
+
+.projectC {
+    background-image: url("../images/liftwhen.png")
+}
+
+.projectD {
+    background-image: url("../images/EXAMPLE4.png")
+}
+
+.resume {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+    z-index: 700;
+    text-align: center;
+    display: inline-block
+}
+
+.resume h1 {
+    padding-top: 80px;
+    font-weight: lighter;
+    color: #fff
+}
+
+.resume h1,
+.resume h2 {
+    letter-spacing: 5px;
+    text-align: center
+}
+
+.resume h2 {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #000;
+    margin-left: 20px
+}
+
+.resume h3 {
+    font-family: "Oswald";
+    font-weight: initial;
+    padding-bottom: 13px
+}
+
+.resume ul {
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+    font-weight: lighter;
+    line-height: 22px;
+    font-size: 1.1em
+}
+
+.wrk {
+    margin-left: auto;
+    margin-right: auto
+}
+
+.wrk ul {
+    list-style-type: initial;
+    text-align: left;
+    width: 80%
+}
+
+.wrk h4 {
+    margin: 0;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: initial;
+    color: #3498db
+}
+
+.wrk h4 span {
+    float: right
+}
+
+.wrk h3 {
+    padding-bottom: 0;
+    letter-spacing: 1px
+}
+
+.edu {
+    text-align: center;
+    padding-bottom: 100px
+}
+
+.edu p {
+    font-weight: lighter
+}
+
+.edu h3 {
+    padding-bottom: 0
+}
+
+.edu h4 {
+    font-style: italic
+}
+
+@media screen and (min-width:0) and (max-width:981px) {
+    nav ul li {
+        padding: 6px
+    }
+
+    .heading #scrollButt {
+        top: 100px
+    }
+
+    .heading .greeting {
+        font-size: 4em;
+        text-shadow: #fff 3px -3px 0, #fff 3px -3px 0, #fff 2px -2px 0, #fff 1px -1px 5px
+    }
+
+    .intro {
+        height: 1300px
+    }
+
+    .intro .introWrapper {
+        right: 0;
+        position: relative
+    }
+
+    .intro .introWrapper h1 {
+        font-size: .9em;
+        letter-spacing: .2em
+    }
+
+    .intro .introWrapper p {
+        font-size: .4em
+    }
+
+    .intro .bio {
+        width: 87%;
+        top: 50px
+    }
+
+    #barB,
+    #barC {
+        width: 100%
+    }
+
+    .portfolio ul li {
+        width: 90%;
+        display: block
+    }
+
+    .contact {
+        padding-top: 100px;
+        height: 75%
+    }
+
+    .contact #hold {
+        position: relative;
+        top: 33%
+    }
+
+    .contact #bye {
+        font-size: 3em;
+        position: relative;
+        top: 0;
+        text-shadow: #fff 3px -3px 0, #fff 3px -3px 0, #fff 2px -2px 0, #fff 1px -1px 5px
+    }
+
+    .resume ul {
+        width: 155px
+    }
+
+    .resume .wrk ul {
+        width: 80%
+    }
+
+    .resume .wrk span {
+        display: none
+    }
+}
+
+@media screen and (min-width:1000px) and (max-width:9999px) {
+    .heading {
+        height: 1050px
+    }
+}
+
+.smallWords {
+    letter-spacing: 0px;
+    font-weight: lighter;
+    position: center
+}
